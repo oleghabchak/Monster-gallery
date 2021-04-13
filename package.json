@@ -1,8 +1,8 @@
 {
-  "name": "my-app03.26",
+  "homepage": "https://oleghabchak.github.io/monsters-gallery",
+  "name": "my-app26",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oleghabchak.github.io/Monster-gallery",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
@@ -70,11 +70,12 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy":"npm build",
-    "deploy": "gh-pages -d build"
+  
   },
   "eslintConfig": {
     "extends": [
@@ -150,5 +151,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
