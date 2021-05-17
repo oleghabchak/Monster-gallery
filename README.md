@@ -1,2 +1,2 @@
 # Monster gallery
- You can find and choose your favorite monster.
+ You can find  your favorite monster.
